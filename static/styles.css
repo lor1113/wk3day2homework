@@ -1,0 +1,14 @@
+body>header {
+    background: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body>header>h1 {
+    color: white;
+}
+
+.orders {
+    
+}

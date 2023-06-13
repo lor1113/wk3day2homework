@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', 
+    filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Saul's Games Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Games Shop</h1>
+    </header>
+    <h3>Your Order</h3>
+    <h3>{{order.customer_name}}</h3>
+    <hr>
+    <div>
+        <p class = "orders">
+            <b> £{{order.order_total}}</b>
+        </p>
+    </div>
+    
+</body>
+</html>

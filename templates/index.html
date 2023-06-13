@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', 
+    filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - Games Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Games Shop</h1>
+    </header>
+    <h3>Order List</h3>
+    <hr>
+    {% for order in orders %}
+    <div>
+        <p class = "orders">
+            <a href={{order.url}}>{{order.customer_name}}</a>
+            <b> £{{order.order_total}}</b>
+        </p>
+    </div>
+    {% endfor %}
+    
+</body>
+</html>
